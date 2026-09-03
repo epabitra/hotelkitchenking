@@ -7,10 +7,12 @@
       // Single Page Apps for GitHub Pages
       // https://github.com/rafgraph/spa-github-pages
       // GitHub Pages has no server-side routing, so a direct hit to a
-      // route like /hotelkitchenking/menu serves this 404 page instead.
-      // This redirects back to index.html, encoding the intended path
-      // in the query string so index.html's script can restore it.
-      var pathSegmentsToKeep = 1; // "/hotelkitchenking"
+      // route like /menu serves this 404 page instead. This redirects
+      // back to index.html, encoding the intended path in the query
+      // string so index.html's script can restore it.
+      // Served from a custom domain at the root, so there's no
+      // /repo-name/ subpath segment to preserve.
+      var pathSegmentsToKeep = 0;
 
       var l = window.location;
       l.replace(

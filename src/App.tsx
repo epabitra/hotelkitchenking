@@ -15,7 +15,7 @@ import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <BrowserRouter basename="/hotelkitchenking">
+    <BrowserRouter>
       <Routes>
         <Route element={<MainLayout />}>
           <Route index element={<Home />} />
